@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo de Productos - Carnicería Rodríguez</title>
+<title> Bodega Rodríguez - Productos</title>
 <!-- Favicon --> 
 <link rel="icon" type="image/png" href="img/logo.png">
 <link rel="stylesheet" href="style/estilo.css">
@@ -12,15 +12,25 @@
 <body>
 
 <header>
-<div class="container">
-  <h1 style="margin-bottom:2px;">Catálogo de Productos</h1>
-  <p style="margin-top:0;">Carnicería Rodríguez - La Ceiba, Atlántida</p>
+<div class="container header-flex">
+  <img src="img/logo.png" alt="Super Bodega Rodríguez Logo" class="logo-header">
+  <div class="header-titles">
+    <h1 class="main-title"> Bodega Rodríguez</h1>
+    <p class="subtitle">Todo para tu hogar y negocio en un solo lugar</p>
+    <p class="location">La Ceiba, Atlántida, Honduras</p>
+    <p class="slogan">¡Calidad, variedad y buenos precios para ti!</p>
+  </div>
+</div>
+<div class="search-bar-container">
+  <input type="text" id="search-input" placeholder="Buscar productos...">
+  <button id="search-btn"><i class="fas fa-search"></i></button>
 </div>
 </header>
 
 <nav>
-  <div class="container">
-    <ul class="nav-menu">
+  <div class="container nav-scroll-container">
+    <button class="nav-arrow nav-arrow-left" aria-label="Deslizar izquierda"><i class="fas fa-chevron-left"></i></button>
+    <ul class="nav-menu nav-scroll">
       <li><a href="#abarrotes"><i class="fas fa-store"></i> Abarrotes y Salsas</a></li>
       <li><a href="#vinagres"><i class="fas fa-wine-bottle"></i> Vinagres y Aderezos</a></li>
       <li><a href="#vasos"><i class="fas fa-glass-whiskey"></i> Vasos y Desechables</a></li>
@@ -30,6 +40,7 @@
       <li><a href="#encendedores"><i class="fas fa-fire"></i> Encendedores</a></li>
       <li><a href="#contacto"><i class="fas fa-address-book"></i> Contacto</a></li>
     </ul>
+    <button class="nav-arrow nav-arrow-right" aria-label="Deslizar derecha"><i class="fas fa-chevron-right"></i></button>
   </div>
 </nav>
 
@@ -103,7 +114,8 @@
       <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/50488415142?text=Hola!%20Estoy%20interesado%20en%20sus%20productos." target="_blank">+504 8841-5142</a></li>
       <li><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:+50488415142">+504 8841-5142</a></li>
       <li><i class="fas fa-envelope"></i> <strong>Correo:</strong> <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a></li>
-      <li><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> La Ceiba, Atlántida, Honduras</li>
+      <li><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Carretera CA13, por la Toyota, La Ceiba, Atlántida, Honduras</li>
+      <li><i class="fas fa-map"></i> <strong>Ubicación en mapa:</strong> <a href="https://maps.google.com/?q=Toyota+La+Ceiba+CA13" target="_blank">Ver en Google Maps</a></li>
     </ul>
     <div class="social-links">
       <a href="https://www.facebook.com/TU_FACEBOOK" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -116,11 +128,23 @@
 
 <footer>
 <div class="container">
-<p>&copy; 2025 Carnicería Rodríguez. Todos los derechos reservados.</p>
+  <div class="footer-flex">
+    <div>
+      <p>&copy; 2025 Carnicería Rodríguez. Todos los derechos reservados.</p>
+      <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/TU_FACEBOOK" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
 </div>
 </footer>
+<button id="goTopBtn" title="Ir arriba"><i class="fas fa-arrow-up"></i></button>
+<a href="https://wa.me/50488415142?text=Hola!%20Estoy%20interesado%20en%20sus%20productos." class="whatsapp-float" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 <script src="funciones/funcion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
