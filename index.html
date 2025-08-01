@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Catálogo de Productos - Carnicería Rodríguez</title>
+<!-- Favicon --> 
+<link rel="icon" type="image/png" href="img/logo.png">
 <link rel="stylesheet" href="style/estilo.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,68 +13,100 @@
 
 <header>
 <div class="container">
-<h1>Catálogo de Productos</h1>
-<p>Carnicería Rodríguez - La Ceiba, Atlántida</p>
+  <h1 style="margin-bottom:2px;">Catálogo de Productos</h1>
+  <p style="margin-top:0;">Carnicería Rodríguez - La Ceiba, Atlántida</p>
 </div>
 </header>
 
 <nav>
-<div class="container">
-<ul>
-<li><a href="#abarrotes">Abarrotes y Salsas</a></li>
-<li><a href="#vinagres">Vinagres y Aderezos</a></li>
-<li><a href="#vasos">Vasos y Desechables</a></li>
-<li><a href="#encendedores">Encendedores</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</div>
+  <div class="container">
+    <ul class="nav-menu">
+      <li><a href="#abarrotes"><i class="fas fa-store"></i> Abarrotes y Salsas</a></li>
+      <li><a href="#vinagres"><i class="fas fa-wine-bottle"></i> Vinagres y Aderezos</a></li>
+      <li><a href="#vasos"><i class="fas fa-glass-whiskey"></i> Vasos y Desechables</a></li>
+      <li><a href="#encendedores"><i class="fas fa-fire"></i> Encendedores</a></li>
+      <li><a href="#contacto"><i class="fas fa-address-book"></i> Contacto</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main class="container">
-
+    
 <section id="abarrotes" class="product-category">
 <h2>Abarrotes y Salsas</h2>
 <div class="product-grid">
-<div class="product-card">
-<img src="img/SALSA BARBACOA CAPORALE GALON.jpg" alt="Salsa Barbacoa Don Caporale Galón">
-<h3>Salsa Barbacoa Don Caporale</h3>
-<p class="description">Salsa barbacoa especial, ideal para marinar carnes y asados.</p>
-<p class="format">Formato: Galón (aprox. 3.78 Litros)</p>
-<p class="price">L. 120.00</p>
-<button class="whatsapp-btn" data-product="Salsa Barbacoa Don Caporale Galón">Consultar vía WhatsApp</button>
-</div>
-<div class="product-card">
-<img src="img/SALSA DE TOMATE CAPORALE GALON.jpg" alt="Salsa de Tomate Don Caporale Galón">
-<h3>Salsa de Tomate Don Caporale</h3>
-<p class="description">Salsa de tomate de alta calidad, base para guisos, pastas y pizzas.</p>
-<p class="format">Formato: Galón (aprox. 3.78 Litros)</p>
-<p class="price">L. 95.00</p>
-<button class="whatsapp-btn" data-product="Salsa de Tomate Don Caporale Galón">Consultar vía WhatsApp</button>
-</div>
-<div class="product-card">
-<img src="img/ADEREZO CAPORALE 1-2.jpg" alt="Aderezo Don Caporale 1/2 Galon">
-<h3>Aderezo Don Caporale 1/2 Galon</h3>
-<p class="description">Salsa de tomate de alta calidad, base para guisos, pastas y pizzas.</p>
-<p class="format">Formato: Galón (aprox. 3.78 Litros)</p>
-<p class="price">L. 95.00</p>
-<button class="whatsapp-btn" data-product="Aderezo Don Caporale 1/2 Galon">Consultar vía WhatsApp</button>
-</div>
-<div class="product-card">
-<img src="img/caja-de-salsa-de-ajo-perejil-buen-provecho-1-2-galon.jpg" alt="Sal de ajo Perejil Buen Provecho Galon 1/2">
-<h3>Sal de ajo Perejil Buen Provecho Galon 1/2</h3>
-<p class="description">Salsa de tomate de alta calidad, base para guisos, pastas y pizzas.</p>
-<p class="format">Formato: Galón (aprox. 3.78 Litros)</p>
-<p class="price">L. 95.00</p>
-<button class="whatsapp-btn" data-product="Sal de ajo Perejil Buen Provecho Galon 1/2">Consultar vía WhatsApp</button>
-</div>
-<div class="product-card">
-<img src="img/SALSA DE TOMATE CAPORALE GALON.jpg" alt="Salsa de Tomate Don Caporale Galón">
-<h3>Salsa de Tomate Don Caporale</h3>
-<p class="description">Salsa de tomate de alta calidad, base para guisos, pastas y pizzas.</p>
-<p class="format">Formato: Galón (aprox. 3.78 Litros)</p>
-<p class="price">L. 95.00</p>
-<button class="whatsapp-btn" data-product="Salsa de Tomate Don Caporale Galón">Consultar vía WhatsApp</button>
-</div>
+  <div class="product-card">
+    <img src="img/SALSA BARBACOA CAPORALE GALON.jpg" alt="Salsa Barbacoa Don Caporale Galón">
+    <h3>Salsa Barbacoa Don Caporale</h3>
+    <p class="description">Salsa barbacoa ahumada, perfecta para costillas, pollo y carnes a la parrilla.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 120.00</p>
+    <button class="whatsapp-btn" data-product="Salsa Barbacoa Don Caporale Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/SALSA DE TOMATE CAPORALE GALON.jpg" alt="Salsa de Tomate Don Caporale Galón">
+    <h3>Salsa de Tomate Don Caporale</h3>
+    <p class="description">Salsa de tomate natural, ideal para pastas, guisos y pizzas.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 95.00</p>
+    <button class="whatsapp-btn" data-product="Salsa de Tomate Don Caporale Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/ADEREZO CAPORALE 1-2.jpg" alt="Aderezo Don Caporale 1/2 Galon">
+    <h3>Aderezo Don Caporale 1/2 Galón</h3>
+    <p class="description">Aderezo cremoso, ideal para ensaladas, sándwiches y acompañamientos.</p>
+    <p class="format">Formato: 1/2 galón (1.89 L)</p>
+    <p class="price">L. 70.00</p>
+    <button class="whatsapp-btn" data-product="Aderezo Don Caporale 1/2 Galon">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/caja-de-salsa-de-ajo-perejil-buen-provecho-1-2-galon.jpg" alt="Sal de ajo Perejil Buen Provecho Galon 1/2">
+    <h3>Sal de ajo Perejil Buen Provecho Galón 1/2</h3>
+    <p class="description">Salsa con ajo y perejil, ideal para carnes, pescados y vegetales.</p>
+    <p class="format">Formato: 1/2 galón (1.89 L)</p>
+    <p class="price">L. 110.00</p>
+    <button class="whatsapp-btn" data-product="Sal de ajo Perejil Buen Provecho Galon 1/2">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/SALSA DE TOMATE CAPORALE GALON.jpg" alt="Salsa de Tomate Don Caporale Galón">
+    <h3>Salsa de Tomate Don Caporale</h3>
+    <p class="description">Salsa de tomate natural, ideal para pastas, guisos y pizzas.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 95.00</p>
+    <button class="whatsapp-btn" data-product="Salsa de Tomate Don Caporale Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/salsa negra.PNG" alt="Salsa Negra">
+    <h3>Salsa Negra</h3>
+    <p class="description">Salsa negra tipo inglesa, ideal para marinar carnes y dar sabor intenso.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 105.00</p>
+    <button class="whatsapp-btn" data-product="Salsa Negra Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/VINAGRE DON CAPORALE 1-2 G.jpg" alt="Vinagre Don Caporale Galón">
+    <h3>Vinagre Don Caporale</h3>
+    <p class="description">Vinagre blanco tradicional, ideal para ensaladas, aderezos y conservas.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 80.00</p>
+    <button class="whatsapp-btn" data-product="Vinagre Don Caporale Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/salsa-bbq-agridulce-buen-provecho-de-1-2-galon.jpg" alt="BBQ Agridulce Buen Provecho">
+    <h3>BBQ Agridulce Buen Provecho</h3>
+    <p class="description">Salsa BBQ agridulce, perfecta para costillas, pollo y carnes asadas.</p>
+    <p class="format">Formato: 1/2 galón (1.89 L)</p>
+    <p class="price">L. 90.00</p>
+    <button class="whatsapp-btn" data-product="BBQ Agridulce Buen Provecho 1/2 Galón">Consultar vía WhatsApp</button>
+  </div>
+  <div class="product-card">
+    <img src="img/SALSA BARBACOA CAPORALE GALON.jpg" alt="Salsa BBQ">
+    <h3>Salsa BBQ</h3>
+    <p class="description">Salsa barbacoa clásica, ideal para carnes, hamburguesas y parrilladas.</p>
+    <p class="format">Formato: Galón (3.78 L)</p>
+    <p class="price">L. 120.00</p>
+    <button class="whatsapp-btn" data-product="Salsa BBQ Galón">Consultar vía WhatsApp</button>
+  </div>
 </div>
 </section>
 
@@ -104,6 +138,14 @@
 <p class="price">L. 110.00</p>
 <button class="whatsapp-btn" data-product="Salsa de Ajo y Perejil Buen Provecho Galón">Consultar vía WhatsApp</button>
 </div>
+<div class="product-card">
+<img src="img/vinagre la chorchita.PNG" alt="Salsa Ajo Perejil Buen Provecho" style="width:auto;height:90px;">
+<h3>Vinagre la chorchita</h3>
+<p class="description">Vinagre blanco tradicional, perfecto para ensaladas, aderezos, conservas y limpieza.</p>
+<p class="format">Formato: Botella de 1 galón (3.78 L)</p>
+<p class="price">L. 75.00</p>
+<button class="whatsapp-btn" data-product="Salsa de Ajo y Perejil Buen Provecho Galón">Consultar vía WhatsApp</button>
+</div>
 </div>
 </section>
 
@@ -119,7 +161,7 @@
 <button class="whatsapp-btn" data-product="Vaso Cervecero Plástico Paquete x50">Consultar vía WhatsApp</button>
 </div>
 <div class="product-card">
-<img src="images/plato_super_fom_9.jpg" alt="Plato Super Fom No. 9">
+<img src="img/formnumero9.jpeg" alt="Plato Super Fom No. 9">
 <h3>Plato Desechable Super Fom No. 9</h3>
 <p class="description">Platos de espuma ideales para servir alimentos en eventos.</p>
 <p class="format">Paquete de [Especificar cantidad, ej., 25 unidades]</p>
@@ -127,8 +169,32 @@
 <button class="whatsapp-btn" data-product="Plato Desechable Super Fom No. 9 Paquete">Consultar vía WhatsApp</button>
 </div>
 <div class="product-card">
-<img src="images/vasos_fom_cups_16oz.jpg" alt="Vasos Fom Cups 16oz">
+<img src="img/VASO FOAM 16 OZ POLY CUPS.jpg" alt="Vasos Fom Cups 16oz">
 <h3>Vasos Fom Cups 16oz</h3>
+<p class="description">Vasos de espuma de 16 onzas, perfectos para bebidas calientes y frías.</p>
+<p class="format">Paquete de [Especificar cantidad, ej., 20 unidades]</p>
+<p class="price">L. 45.00</p>
+<button class="whatsapp-btn" data-product="Vasos Fom Cups 16oz Paquete">Consultar vía WhatsApp</button>
+</div>
+<div class="product-card">
+<img src="img/ " alt="Vasos Fom Cups 16oz">
+<h3>platos Super Fom 1P</h3>
+<p class="description">Vasos de espuma de 16 onzas, perfectos para bebidas calientes y frías.</p>
+<p class="format">Paquete de [Especificar cantidad, ej., 20 unidades]</p>
+<p class="price">L. 45.00</p>
+<button class="whatsapp-btn" data-product="Vasos Fom Cups 16oz Paquete">Consultar vía WhatsApp</button>
+</div>
+<div class="product-card">
+<img src="img/ " alt="Vasos Fom Cups 16oz">
+<h3>Plato Desechable</h3>
+<p class="description">Vasos de espuma de 16 onzas, perfectos para bebidas calientes y frías.</p>
+<p class="format">Paquete de [Especificar cantidad, ej., 20 unidades]</p>
+<p class="price">L. 45.00</p>
+<button class="whatsapp-btn" data-product="Vasos Fom Cups 16oz Paquete">Consultar vía WhatsApp</button>
+</div>
+<div class="product-card">
+<img src="img/ " alt="Vasos Fom Cups 16oz">
+<h3>Papel Higienico Nube Blanco</h3>
 <p class="description">Vasos de espuma de 16 onzas, perfectos para bebidas calientes y frías.</p>
 <p class="format">Paquete de [Especificar cantidad, ej., 20 unidades]</p>
 <p class="price">L. 45.00</p>
@@ -152,16 +218,20 @@
 </section>
 
 <section id="contacto" class="contact-info">
-<h2>Contacto</h2>
-<p>¡Contáctanos para realizar tu pedido o para más información!</p>
-<p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/504TU_NUMERO_DE_WHATSAPP?text=Hola!%20Estoy%20interesado%20en%20sus%20productos." target="_blank">+504 TU NÚMERO DE WHATSAPP</a></p>
-<p><i class="fas fa-phone"></i> Teléfono: +504 TU OTRO NÚMERO (si aplica)</p>
-<p><i class="fas fa-envelope"></i> Correo Electrónico: <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a></p>
-<p><i class="fas fa-map-marker-alt"></i> Dirección: La Ceiba, Atlántida, Honduras</p>
-<div class="social-links">
-<a href="https://www.facebook.com/TU_FACEBOOK" target="_blank"><i class="fab fa-facebook-f"></i></a>
-<a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
+  <h2>Contacto</h2>
+  <div class="contact-card">
+    <p class="contact-intro">¿Tienes dudas o quieres hacer un pedido? ¡Estamos para servirte!</p>
+    <ul class="contact-list">
+      <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/50488415142?text=Hola!%20Estoy%20interesado%20en%20sus%20productos." target="_blank">+504 8841-5142</a></li>
+      <li><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:+50488415142">+504 8841-5142</a></li>
+      <li><i class="fas fa-envelope"></i> <strong>Correo:</strong> <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a></li>
+      <li><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> La Ceiba, Atlántida, Honduras</li>
+    </ul>
+    <div class="social-links">
+      <a href="https://www.facebook.com/TU_FACEBOOK" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
 </section>
 
 </main>
