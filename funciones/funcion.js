@@ -1,5 +1,41 @@
+// --- Funciones de UI: botón ir arriba y búsqueda ---
+// Botón ir arriba
+window.addEventListener('DOMContentLoaded', function() {
+  const goTopBtn = document.getElementById('goTopBtn');
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      goTopBtn.style.display = 'block';
+    } else {
+      goTopBtn.style.display = 'none';
+    }
+  };
+  goTopBtn.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  // Búsqueda de productos
+  document.getElementById('search-btn').onclick = function() {
+    buscarProductos();
+  };
+  document.getElementById('search-input').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') buscarProductos();
+  });
+}); 
+
+function buscarProductos() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const secciones = ['abarrotes','vinagres','vasos','encendedores','limpieza','condimentos','higiene','sofrito'];
+  secciones.forEach(sec => {
+    const grid = document.getElementById(sec+'-grid');
+    if (!grid) return;
+    Array.from(grid.children).forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+}
 // --- Catálogo de productos por sección ---
-const catalogo = {
+const catalogo = { 
   abarrotes: [
     {
       img: 'img/SALSA BARBACOA CAPORALE GALON.jpg',
